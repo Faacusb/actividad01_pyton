@@ -36,12 +36,32 @@ def realizar_calculo():
 
 print('Ejercicio 2')
 
-def numero_en_orden(num):
+def numero_en_orden_ascendente(num):
     num_string = str(num)
     for i in range(len(num_string)-1):
         if num_string[i]> num_string[i + 1]:
             return False
     return True    
 
-# print(numero_en_orden(5432))
+print('Ejercicio 3')
+def numeros_impares_juntos(entrada):
+    impares = [str(num) for num in entrada if num % 2 != 0]
+    lista_impares = ",".join(impares)
+    return lista_impares
 
+entrada = [1,2,3,4,6,7]
+numeros_impares_juntos(entrada)
+
+print('Ejercicio 4')
+def lista_elementos_en_comun(lista1, lista2):
+    conjunto1 = set(lista1)
+    conjunto2 = set(lista2)
+    elementos_en_comun = conjunto1 & conjunto2
+    for elemento in elementos_en_comun:
+        print(elemento)
+
+celula_animal = ["nucleo", "membrana celular","citoplasma", "mitocondrias", "centriolos"]
+celula_vegetal = ["nucleo", "membrana celular", "citoplasma", "mitocondrias", "pared celular", "cloroplastos"]
+lista_elementos_en_comun(celula_animal, celula_vegetal)
+
+# print(numero_en_orden(5432))
