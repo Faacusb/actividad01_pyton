@@ -1,3 +1,5 @@
+from impresiones import declarar_comida_favorita
+
 print('Ejercicio 1')
 def realizar_calculo():    
     print('Elija la operacion matematica deseada:')
@@ -32,7 +34,7 @@ def realizar_calculo():
         resultado = num1 / num2
         print(f"El resultado de la division es: {resultado}")
 
-# realizar_calculo()
+realizar_calculo()
 
 print('Ejercicio 2')
 
@@ -43,6 +45,9 @@ def numero_en_orden_ascendente(num):
             return False
     return True    
 
+print(numero_en_orden_ascendente(6))
+print('Fin ejercicio 2')
+
 print('Ejercicio 3')
 def numeros_impares_juntos(entrada):
     impares = [str(num) for num in entrada if num % 2 != 0]
@@ -50,7 +55,8 @@ def numeros_impares_juntos(entrada):
     return lista_impares
 
 entrada = [1,2,3,4,6,7]
-numeros_impares_juntos(entrada)
+print(numeros_impares_juntos(entrada))
+print('Fin ejercicio 3')
 
 print('Ejercicio 4')
 def lista_elementos_en_comun(lista1, lista2):
@@ -65,3 +71,34 @@ celula_vegetal = ["nucleo", "membrana celular", "citoplasma", "mitocondrias", "p
 lista_elementos_en_comun(celula_animal, celula_vegetal)
 
 # print(numero_en_orden(5432))
+print('Fin ejercicio 4')
+
+print('Ejercicio 5')
+def clave_valida(clave):
+   if len(clave)< 6 or len(clave)> 20:
+      return False
+   
+   elif not any(num.isdigit() for num in clave):
+      return False
+   
+   elif " " in clave:
+      return False      
+   else:
+    return True      
+   
+print(clave_valida("martines1"))
+print('Fin ejercicio 5')
+
+print('Ejercicio 6')
+def persona_mayor_de_edad(edad):
+   return edad >= 18
+
+print(persona_mayor_de_edad(18))
+print('Fin Ejercicio 6')
+
+print('Ejercicio 8')
+declarar_comida_favorita("Juan", "Milanesa Napolitana")
+
+print('Fin ejercicio 8')
+
+
