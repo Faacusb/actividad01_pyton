@@ -107,8 +107,6 @@ def cuenta_regresiva(entero_positivo):
     if entero_positivo >= 0:
         print(f"{entero_positivo}")
         cuenta_regresiva(entero_positivo - 1)
-    else:
-        print("nada")
     
 cuenta_regresiva(4)
 print('Fin ejercicio 9')
