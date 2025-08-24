@@ -35,6 +35,7 @@ def realizar_calculo():
         print(f"El resultado de la division es: {resultado}")
 
 realizar_calculo()
+print('Fin Ejercicio 1')
 
 print('Ejercicio 2')
 
@@ -111,3 +112,7 @@ def cuenta_regresiva(entero_positivo):
     
 cuenta_regresiva(4)
 print('Fin ejercicio 9')
+
+print('Ejercicio 10')
+print('(a and b) or True: Resultado True')
+print('Fin Ejercicio 10')
